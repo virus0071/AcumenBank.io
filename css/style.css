@@ -374,12 +374,7 @@ footer .copyright a {
 #login h2 {
 	font-size: 32px;
 }
-#work .title {
-	padding: 80px 20px 20px 20px;
-}
-.portfolio-thumb .portfolio-overlay {
-	padding-top: 24px;
-}
+
 }
 @media (max-width:767px) {
 .navbar-brand {
@@ -396,7 +391,5 @@ footer .copyright a {
 #login h2 {
 	font-size: 20px;
 }
-.portfolio-thumb .portfolio-overlay {
-	padding-top: 60px;
-}
+
 }
