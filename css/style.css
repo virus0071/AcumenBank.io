@@ -192,7 +192,7 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 #login {
 	background: #f6f6f6 url('../images/13.jpg') 50% 0 repeat-y fixed;
 	color: black;
-	padding-top: 300px;
+	padding-top: 100px;
 	padding-bottom: 80px;
 	height:900px;
 }
