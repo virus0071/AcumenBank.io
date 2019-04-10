@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Acumen Bank</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <!-- x icon-->
+  <link rel='icon' href='images/logo.png' type='image/x-icon' />
+  <!-- STYLESHEET CSS FILES -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/nivo-lightbox.css">
+  <link rel="stylesheet" href="css/nivo_themes/default/default.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+  <!-- preloader section -->
+  <div class="preloader">
+    <div class="sk-spinner sk-spinner-rotating-plane"></div>
+  </div>
+  <!-- home section -->
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h1 class="wow bounceInDown rotate">Acumen Bank</h1>
+          <h2 class="wow bounce">Where your success starts!</h2>
+          <a href="#login" class="btn btn-default smoothScroll">Start</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- navigation section -->
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span
+            class="icon icon-bar"></span> <span class="icon icon-bar"></span> <span class="icon icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">Acumen Bank</a></div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home" class="smoothScroll">Home</a></li>
+          <li><a href="#login" class="smoothScroll">Login</a></li>
+          <li><a href="#account" class="smoothScroll">Account</a></li>
+          <li><a href="#history" class="smoothScroll">History</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- login section -->
+  <section id="login">
+    <h2>Login</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 contact-form wow fadeInUp" data-wow-delay="0.9s">
+          <form action="#" method="post">
+            <input type="text" class="form-control" placeholder="Username/Email">
+            <br>
+            <input type="email" class="form-control" placeholder="Password">
+            <br>
+            <button class="btn btn-danger">Login</button>
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- checking account section -->
+  <section id="account">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 contact-form wow fadeInUp" data-wow-delay="0.9s">
+          <h2>Account</h2>
+          <form role="form">
+            <div class="form-group">
+              <label for="name-input">User Name</label>
+              <input class="form-control" id="user-input" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="start-input">Start Date</label>
+              <input class="form-control" id="date-input" type="date">
+            </div>
+
+            <div class="form-group">
+              <label for="role-input">Deposite/Withdraw/Transfer</label>
+              <select class="form-control" id="action-input" type="menu">
+                <option value="#">Choose an action</option>
+                <option value="deposite">Deposite</option>
+                <option value="withdraw">Withdraw</option>
+                <option value="transfer">Transfer</option>
+
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="name-input">Amount</label>
+              <input class="form-control" id="number-input" type="number" min="0" value="0">
+            </div>
+
+            <div class="form-group">
+              <label for="freq-input">From Account</label>
+              <select class="form-control" id="fromaccount-input" type="menu">
+                <option value="#">Choose an account</option>
+                <option value="Checking #1">Checking #1</option>
+                <option value="Saving">Saving</option>
+
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="freq-input">To User</label>
+              <input class="form-control" id="touser-input" type="text">
+                
+            </div>
+
+            <div class="form-group">
+              <label for="freq-input">To User's Account</label>
+              <select class="form-control" id="toaccount-input" type="menu">
+                <option value="#">Choose an account</option>
+                <option value="Checking #1">Checking #1</option>
+                <option value="Saving">Saving</option>
+
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="freq-input">Interest Rate</label>
+              <input class="form-control" id="interest-input" type="decimal">
+                
+            </div>
+
+            <button class="btn btn-primary" id="action-button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <br>
+      <h2></h2>
+      <br>
+      <br>
+
+    </div>
+    </div>
+  </section>
+
+
+
+  <!-- history section -->
+  <section id="history">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h3 class="panel-title">Account History</h3>
+                  <h5 class="time">Current Time</h5>
+              </div>
+              <div class="panel-body">
+                  <div id="history">
+                      <table class="table">
+                          <thead>
+                          <tr>
+                              <th scope="col">User</th>
+                              <th scope="col">Action</th>
+                              <th scope="col">From</th>
+                              <th scope="col">To User</th>
+                              <th scope="col">Account Type</th>
+                              <th scope="col">Amount</th>
+                              <th scope="col">Balance</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                      
+                          </tbody>
+                  </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- contact section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
+          <h2>Contact Us</h2>
+          <hr>
+
+        </div>
+        <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 contact-form wow fadeInUp" data-wow-delay="0.9s">
+          <form action="#" method="post">
+            <input type="text" class="form-control" placeholder="Name">
+            <input type="email" class="form-control" placeholder="Email">
+            <textarea class="form-control" placeholder="Message" rows="6"></textarea>
+            <input type="submit" class="form-control" value="SEND">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h2 class="wow fadeIn" data-wow-delay="0.9s">Follow Us</h2>
+          <br>
+          <br>
+          <ul class="social-icon">
+            <li><a href="https://www.facebook.com/AcumenSolutions/" class="fa fa-facebook wow bounceIn" target="_blank"
+                data-wow-delay="0.3s"></a></li>
+            <li><a href="https://www.linkedin.com/company/acumen-solutions/" class="fa fa-linkedin wow bounceIn"
+                target="_blank" data-wow-delay="0.3s"></a></li>
+            <li><a href="https://twitter.com/acumensolutions" class="fa fa-twitter wow bounceIn" target="_blank"
+                data-wow-delay="0.6s"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCwFdQnLxOc_rPb1lIP_RN5Q" class="fa fa-youtube wow bounceIn"
+                target="_blank" data-wow-delay="0.6s"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-12 col-sm-12 copyright">
+          <h5>Copyright © 2019 | Acumen Bank</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JAVASCRIPT JS FILES -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/nivo-lightbox.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.parallax.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  
+
+  
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBp8GoeM-O8SKTiEemOPHU1es4ue02_TcA",
+      authDomain: "acumenbank-777.firebaseapp.com",
+      databaseURL: "https://acumenbank-777.firebaseio.com",
+      projectId: "acumenbank-777",
+      storageBucket: "acumenbank-777.appspot.com",
+      messagingSenderId: "950018312195"
+    };
+    firebase.initializeApp(config);
+    var database = firebase.database();
+
+    $(".time").html("Current Time: " + moment().toString());
+
+    var user = "";
+    var startDate = "";
+    var action = "";
+    var amount = "";
+    var fromAccount = "";
+    var toUser = "";
+    var toAccount = "";
+    var interestRate = "";
+
+    var createRow = function(){
+        var tBody = $("tbody");
+        var tRow = $("<tr>");
+
+        var userTd = $("<td>").text(snapshot.val().user);
+        var startDateTd = $("<td>").text(snapshot.val().startDate);
+        var action = $("<td>").text(snapshot.val().action);
+        var amountTd = $("<td>").text(snapshot.val().amount);
+        var fromAccountTd = $("<td>").text(snapshot.val().fromAccount);
+        var toUserTd = $("<td>").text(snapshot.val().toUser);
+        var toAccountTd = $("<td>").text(snapshot.val().toAccount);
+        var interestRateTd = $("<td>").text(snapshot.val().interestRate);
+    };
+
+
+    $("#action-button").on("click", function(event){
+    event.preventDefault();
+
+    user=$("#user-input").val().trim();
+    startDate=$("#date-input").val().trim();
+    action=$("#action-input").val().trim();
+    amount=$("#number-input").val().trim();
+    fromAccount=$("#fromaccount-input").val().trim();
+    toUser=$("#touser-input").val().trim();
+    toAccount=$("#toaccount-input").val().trim();
+    interestRate=$("#interest-input").val().trim();
+
+
+
+    database.ref().push({
+        user: user,
+        startDate: startDate,
+        action: action,
+        amount: amount,
+        fromAccount: fromAccount,
+        toUser: toUser,
+        toAccount: toAccount,
+        interestRate:interestRate,
+        Key : firebase.database().ref().push().key,
+        dateAdded: firebase.database.ServerValue.TIMESTAMP
+    })
+
+})
+
+database.ref().on("child_added", function(childsnapshot){
+    
+    $(user).text(childsnapshot.val().user);
+    $(startDate).text(childsnapshot.val().startDate);
+    $(action).text(childsnapshot.val().action);
+    $(amount).text(childsnapshot.val().amount);
+    $(fromAccount).text(childsnapshot.val().fromAccount);
+    $(toUser).text(childsnapshot.val().toUser);
+    $(toAccount).text(childsnapshot.val().toAccount);
+    $(interestRate).text(childsnapshot.val().interestRate);
+
+
+
+    var user = childsnapshot.val().user;
+    var startDate = childsnapshot.val().startDate;
+    var action = childsnapshot.val().action;
+    var amount = childsnapshot.val().amount;
+    var fromAccount = childsnapshot.val().fromAccount;
+    var toUser = childsnapshot.val().toUser;
+    var toAccount = childsnapshot.val().toAccount;
+    var interestRate = childsnapshot.val().interestRate;
+    
+    var startYear = moment(startDate).get("Year");
+    var currentYear = moment().get("year");
+    var diffYear = moment().diff(moment(startYear), "yyyy", "years");
+    
+
+    $("#history tbody").append("<tr><td>" + user + "</td><td>" + action + "</td><td>" + fromAccount + "</td><td>" + toUser + "</td><td>" + toAccount + "</td><td>" + amount + "<button type='button' class='btn btn-danger btn-xs pull-right'><span class='glyphicon glyphicon-trash'></span></button>" + "</td></tr>")
+
+    }, function(errorObject){
+      console.log("The read failed: " + errorObject.code);
+    });
+
+
+  </script>
+
+</body>
+
+</html>
